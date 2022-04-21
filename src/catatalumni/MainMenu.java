@@ -157,9 +157,24 @@ public class MainMenu extends javax.swing.JFrame {
         jLabel21 = new javax.swing.JLabel();
         pickEditUmur = new javax.swing.JSpinner();
         buttonEditAlumni = new javax.swing.JPanel();
-        textTambahAlumni1 = new javax.swing.JLabel();
+        textEditAlumni = new javax.swing.JLabel();
         buttonBackEdit = new javax.swing.JPanel();
         textBackEdit = new javax.swing.JLabel();
+        panelProfil = new javax.swing.JPanel();
+        panelWadahTambah2 = new javax.swing.JPanel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        panelWadahFieldTambah2 = new javax.swing.JPanel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        fieldUsername = new javax.swing.JTextField();
+        jSeparator9 = new javax.swing.JSeparator();
+        jSeparator10 = new javax.swing.JSeparator();
+        buttonEditProfil = new javax.swing.JPanel();
+        textEditProfil = new javax.swing.JLabel();
+        fieldPassword = new javax.swing.JPasswordField();
+        buttonBackProfil = new javax.swing.JPanel();
+        textBackProfil = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -537,7 +552,7 @@ public class MainMenu extends javax.swing.JFrame {
                     .addComponent(fieldStatus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(buttonTambahAlumni, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(10, Short.MAX_VALUE))
         );
 
         buttonBackTambah.setBackground(new java.awt.Color(207, 218, 200));
@@ -838,10 +853,10 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
 
-        textTambahAlumni1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        textTambahAlumni1.setForeground(new java.awt.Color(232, 234, 230));
-        textTambahAlumni1.setText("Update ke Database");
-        buttonEditAlumni.add(textTambahAlumni1);
+        textEditAlumni.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        textEditAlumni.setForeground(new java.awt.Color(232, 234, 230));
+        textEditAlumni.setText("Tambahkan ke Database");
+        buttonEditAlumni.add(textEditAlumni);
 
         javax.swing.GroupLayout panelWadahFieldTambah1Layout = new javax.swing.GroupLayout(panelWadahFieldTambah1);
         panelWadahFieldTambah1.setLayout(panelWadahFieldTambah1Layout);
@@ -926,7 +941,7 @@ public class MainMenu extends javax.swing.JFrame {
                     .addComponent(fieldEditStatus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(buttonEditAlumni, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(10, Short.MAX_VALUE))
         );
 
         buttonBackEdit.setBackground(new java.awt.Color(207, 218, 200));
@@ -964,13 +979,186 @@ public class MainMenu extends javax.swing.JFrame {
                 .addGap(63, 63, 63)
                 .addComponent(panelWadahTambah1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(panelWadahFieldTambah1, javax.swing.GroupLayout.PREFERRED_SIZE, 213, Short.MAX_VALUE)
+                .addComponent(panelWadahFieldTambah1, javax.swing.GroupLayout.DEFAULT_SIZE, 213, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addComponent(buttonBackEdit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
         panelDefault.add(panelEdit, "cardEdit");
+
+        panelProfil.setBackground(new java.awt.Color(124, 148, 115));
+
+        panelWadahTambah2.setBackground(new java.awt.Color(207, 218, 200));
+        panelWadahTambah2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(232, 234, 230), 1, true));
+        panelWadahTambah2.setPreferredSize(new java.awt.Dimension(698, 165));
+
+        jLabel26.setFont(new java.awt.Font("Arial", 1, 48)); // NOI18N
+        jLabel26.setForeground(new java.awt.Color(81, 96, 75));
+        jLabel26.setText("Profil");
+
+        jLabel27.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel27.setForeground(new java.awt.Color(81, 96, 75));
+        jLabel27.setText("Ubah Username dan Password Untuk Login");
+
+        javax.swing.GroupLayout panelWadahTambah2Layout = new javax.swing.GroupLayout(panelWadahTambah2);
+        panelWadahTambah2.setLayout(panelWadahTambah2Layout);
+        panelWadahTambah2Layout.setHorizontalGroup(
+            panelWadahTambah2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelWadahTambah2Layout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addGroup(panelWadahTambah2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel26)
+                    .addComponent(jLabel27))
+                .addContainerGap(290, Short.MAX_VALUE))
+        );
+        panelWadahTambah2Layout.setVerticalGroup(
+            panelWadahTambah2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelWadahTambah2Layout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addComponent(jLabel26)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel27)
+                .addContainerGap(34, Short.MAX_VALUE))
+        );
+
+        panelWadahFieldTambah2.setBackground(new java.awt.Color(207, 218, 200));
+        panelWadahFieldTambah2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(232, 234, 230), 1, true));
+        panelWadahFieldTambah2.setPreferredSize(new java.awt.Dimension(698, 165));
+
+        jLabel28.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel28.setForeground(new java.awt.Color(81, 96, 75));
+        jLabel28.setText("Username");
+
+        jLabel29.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel29.setForeground(new java.awt.Color(81, 96, 75));
+        jLabel29.setText("Password");
+
+        fieldUsername.setBackground(new java.awt.Color(207, 218, 200));
+        fieldUsername.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        fieldUsername.setForeground(new java.awt.Color(81, 96, 75));
+        fieldUsername.setBorder(null);
+
+        jSeparator9.setBackground(new java.awt.Color(81, 96, 75));
+        jSeparator9.setForeground(new java.awt.Color(81, 96, 75));
+        jSeparator9.setPreferredSize(new java.awt.Dimension(0, 3));
+
+        jSeparator10.setBackground(new java.awt.Color(81, 96, 75));
+        jSeparator10.setForeground(new java.awt.Color(81, 96, 75));
+        jSeparator10.setPreferredSize(new java.awt.Dimension(0, 3));
+
+        buttonEditProfil.setBackground(new java.awt.Color(81, 96, 75));
+        buttonEditProfil.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(232, 234, 230), new java.awt.Color(205, 208, 203), null));
+        buttonEditProfil.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        buttonEditProfil.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                buttonEditProfilMousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                buttonEditProfilMouseReleased(evt);
+            }
+        });
+
+        textEditProfil.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        textEditProfil.setForeground(new java.awt.Color(232, 234, 230));
+        textEditProfil.setText("Edit Profil");
+        buttonEditProfil.add(textEditProfil);
+
+        fieldPassword.setBackground(new java.awt.Color(207, 218, 200));
+        fieldPassword.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        fieldPassword.setForeground(new java.awt.Color(81, 96, 75));
+        fieldPassword.setBorder(null);
+
+        javax.swing.GroupLayout panelWadahFieldTambah2Layout = new javax.swing.GroupLayout(panelWadahFieldTambah2);
+        panelWadahFieldTambah2.setLayout(panelWadahFieldTambah2Layout);
+        panelWadahFieldTambah2Layout.setHorizontalGroup(
+            panelWadahFieldTambah2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelWadahFieldTambah2Layout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addGroup(panelWadahFieldTambah2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelWadahFieldTambah2Layout.createSequentialGroup()
+                        .addGroup(panelWadahFieldTambah2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel28)
+                            .addComponent(jLabel29))
+                        .addGap(68, 68, 68)
+                        .addGroup(panelWadahFieldTambah2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jSeparator9, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
+                            .addComponent(fieldUsername, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
+                            .addComponent(jSeparator10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(fieldPassword)))
+                    .addGroup(panelWadahFieldTambah2Layout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addComponent(buttonEditProfil, javax.swing.GroupLayout.PREFERRED_SIZE, 639, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(25, Short.MAX_VALUE))
+        );
+        panelWadahFieldTambah2Layout.setVerticalGroup(
+            panelWadahFieldTambah2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelWadahFieldTambah2Layout.createSequentialGroup()
+                .addGroup(panelWadahFieldTambah2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelWadahFieldTambah2Layout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+                        .addComponent(jLabel28)
+                        .addGap(27, 27, 27))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelWadahFieldTambah2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(panelWadahFieldTambah2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(panelWadahFieldTambah2Layout.createSequentialGroup()
+                                .addGap(29, 29, 29)
+                                .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(fieldUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)))
+                .addGroup(panelWadahFieldTambah2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(fieldPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel29))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator10, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(buttonEditProfil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        buttonBackProfil.setBackground(new java.awt.Color(207, 218, 200));
+        buttonBackProfil.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(232, 234, 230), new java.awt.Color(205, 208, 203), null));
+        buttonBackProfil.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        buttonBackProfil.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                buttonBackProfilMousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                buttonBackProfilMouseReleased(evt);
+            }
+        });
+
+        textBackProfil.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        textBackProfil.setForeground(new java.awt.Color(81, 96, 75));
+        textBackProfil.setText("Kembali ke Halaman Utama");
+        buttonBackProfil.add(textBackProfil);
+
+        javax.swing.GroupLayout panelProfilLayout = new javax.swing.GroupLayout(panelProfil);
+        panelProfil.setLayout(panelProfilLayout);
+        panelProfilLayout.setHorizontalGroup(
+            panelProfilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelProfilLayout.createSequentialGroup()
+                .addGap(81, 81, 81)
+                .addGroup(panelProfilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(panelWadahFieldTambah2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(panelWadahTambah2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonBackProfil, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(81, Short.MAX_VALUE))
+        );
+        panelProfilLayout.setVerticalGroup(
+            panelProfilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelProfilLayout.createSequentialGroup()
+                .addGap(63, 63, 63)
+                .addComponent(panelWadahTambah2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(panelWadahFieldTambah2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46)
+                .addComponent(buttonBackProfil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(37, Short.MAX_VALUE))
+        );
+
+        panelDefault.add(panelProfil, "cardProfil");
 
         getContentPane().add(panelDefault, java.awt.BorderLayout.CENTER);
 
@@ -990,7 +1178,9 @@ public class MainMenu extends javax.swing.JFrame {
 
         if(jawab == JOptionPane.YES_OPTION){
             JOptionPane.showMessageDialog(this, "Sesi telah berakhir, silahkan login kembali");
-            System.exit(0);
+            
+            this.dispose();
+            new Login().setVisible(true);
         }
     }//GEN-LAST:event_buttonLogoutMouseReleased
 
@@ -1002,6 +1192,9 @@ public class MainMenu extends javax.swing.JFrame {
     private void buttonPengaturanMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonPengaturanMouseReleased
         buttonPengaturan.setBackground(new Color(232, 234, 230));
         textPengaturan.setForeground(new Color(81,96,75));
+        count_alumni();
+        CardLayout card = (CardLayout)panelDefault.getLayout();
+        card.show(panelDefault, "cardProfil");
     }//GEN-LAST:event_buttonPengaturanMouseReleased
 
     private void buttonPengaturanMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonPengaturanMousePressed
@@ -1012,7 +1205,7 @@ public class MainMenu extends javax.swing.JFrame {
     private void buttonLihatMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLihatMouseReleased
         buttonLihat.setBackground(new Color(232, 234, 230));
         textLihat.setForeground(new Color(81,96,75));
-        
+        count_alumni();
         CardLayout card = (CardLayout)panelDefault.getLayout();
         card.show(panelDefault, "cardLihat");
     }//GEN-LAST:event_buttonLihatMouseReleased
@@ -1025,10 +1218,9 @@ public class MainMenu extends javax.swing.JFrame {
     private void buttonTambahMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonTambahMouseReleased
         buttonTambah.setBackground(new Color(232, 234, 230));
         textTambah.setForeground(new Color(81,96,75));
-        
+        count_alumni();
         CardLayout card = (CardLayout)panelDefault.getLayout();
         card.show(panelDefault, "cardTambah");
-        
     }//GEN-LAST:event_buttonTambahMouseReleased
 
     private void buttonTambahMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonTambahMousePressed
@@ -1061,23 +1253,12 @@ public class MainMenu extends javax.swing.JFrame {
     private void buttonBackTambahMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonBackTambahMousePressed
         buttonBackTambah.setBackground(new Color(207, 218, 200));
         textBackTambah.setForeground(new Color(124, 148, 115));
-         try {
-            String sql = "SELECT COUNT(*) AS jumlahalumni FROM alumni;";
-            java.sql.Connection conn=(Connection)Koneksi.configDB();
-            java.sql.PreparedStatement pst=conn.prepareStatement(sql);
-            ResultSet s = pst.executeQuery();
-            
-            s.next();
-            total.setText(String.valueOf(s.getInt(1) + " orang"));
-        } catch (SQLException e) {
-            JOptionPane.showMessageDialog(this, e.getMessage(), "Ada yang salah", JOptionPane.INFORMATION_MESSAGE);
-        }
     }//GEN-LAST:event_buttonBackTambahMousePressed
 
     private void buttonBackTambahMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonBackTambahMouseReleased
         buttonBackTambah.setBackground(new Color(207,218,200));
         textBackTambah.setForeground(new Color(81,96,75));
-        
+        count_alumni();
         CardLayout card = (CardLayout)panelDefault.getLayout();
         card.show(panelDefault, "cardUtama");
     }//GEN-LAST:event_buttonBackTambahMouseReleased
@@ -1085,20 +1266,9 @@ public class MainMenu extends javax.swing.JFrame {
     private void buttonBackLihatMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonBackLihatMouseReleased
         buttonBackLihat.setBackground(new Color(207,218,200));
         textBackLihat.setForeground(new Color(81,96,75));
-        
+        count_alumni();
         CardLayout card = (CardLayout)panelDefault.getLayout();
         card.show(panelDefault, "cardUtama");
-         try {
-            String sql = "SELECT COUNT(*) AS jumlahalumni FROM alumni;";
-            java.sql.Connection conn=(Connection)Koneksi.configDB();
-            java.sql.PreparedStatement pst=conn.prepareStatement(sql);
-            ResultSet s = pst.executeQuery();
-            
-            s.next();
-            total.setText(String.valueOf(s.getInt(1) + " orang"));
-        } catch (SQLException e) {
-            JOptionPane.showMessageDialog(this, e.getMessage(), "Ada yang salah", JOptionPane.INFORMATION_MESSAGE);
-        }
     }//GEN-LAST:event_buttonBackLihatMouseReleased
 
     private void buttonBackLihatMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonBackLihatMousePressed
@@ -1117,7 +1287,7 @@ public class MainMenu extends javax.swing.JFrame {
         if (n == 1) {
             System.out.println("you choose " + n);
             try {
-                String sql ="DELETE FROM alumni WHERE id_alumni='"+table_alumni.getValueAt(baris, 0)+"'";
+                String sql ="DELETE FROM perjalanan WHERE id_perjalanan='"+table_alumni.getValueAt(baris, 0)+"'";
                 java.sql.Connection conn=(Connection)Koneksi.configDB();
                 java.sql.PreparedStatement pst=conn.prepareStatement(sql);
                 pst.execute();
@@ -1152,10 +1322,14 @@ public class MainMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_table_alumniMouseClicked
 
     private void buttonEditAlumniMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonEditAlumniMousePressed
-        // TODO add your handling code here:
+        buttonEditAlumni.setBackground(new Color(124, 148, 115));
+        textEditAlumni.setForeground(new Color(81,96,75));
     }//GEN-LAST:event_buttonEditAlumniMousePressed
 
     private void buttonEditAlumniMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonEditAlumniMouseReleased
+        buttonEditAlumni.setBackground(new Color(81,96,75));
+        textEditAlumni.setForeground(new Color(232,234,230));
+        
         try{
             String sql = "UPDATE alumni SET nama_lengkap = '"+fieldEditNama.getText()+
             "', umur = '"+pickEditUmur.getValue()+
@@ -1168,6 +1342,7 @@ public class MainMenu extends javax.swing.JFrame {
             java.sql.PreparedStatement pst=conn.prepareStatement(sql);
             pst.execute();
             update_table();
+            count_alumni();
 
             JOptionPane.showMessageDialog(null, "Data telah berubah", "Sukses", JOptionPane.INFORMATION_MESSAGE);
 
@@ -1177,35 +1352,16 @@ public class MainMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_buttonEditAlumniMouseReleased
 
     private void buttonBackEditMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonBackEditMousePressed
-        DefaultTableModel model = new DefaultTableModel();
-        model.addColumn("No");
-        model.addColumn("Nama Lengkap");
-        model.addColumn("Umur");
-        model.addColumn("Tahun Kelulusan");
-        model.addColumn("Jurusan");
-        model.addColumn("Nomor HP");
-        model.addColumn("Status");
-        
-        //menampilkan data database kedalam tabel
-        try {
-            String sql = "SELECT * FROM alumni";
-            java.sql.Connection conn=(Connection)Koneksi.configDB();
-            java.sql.Statement stm=conn.createStatement();
-            java.sql.ResultSet res=stm.executeQuery(sql);
-            
-            int i = 1;
-            while(res.next()){
-                model.addRow(new Object[]{Integer.parseInt(res.getString(1)),res.getString(2),res.getString(3),res.getString(4),res.getString(5),res.getString(6),res.getString(7)});
-            }
-            table_alumni.setModel(model);
-        } catch (SQLException e) {
-            JOptionPane.showMessageDialog(this, e.getMessage(), "Ada yang salah", JOptionPane.INFORMATION_MESSAGE);
-        }
+        buttonBackEdit.setBackground(new Color(207, 218, 200));
+        textBackEdit.setForeground(new Color(124, 148, 115));
     }//GEN-LAST:event_buttonBackEditMousePressed
 
     private void buttonBackEditMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonBackEditMouseReleased
+        buttonBackEdit.setBackground(new Color(207,218,200));
+        textBackEdit.setForeground(new Color(81,96,75));
+        count_alumni();
         CardLayout card = (CardLayout)panelDefault.getLayout();
-        card.show(panelDefault, "cardLihat");
+        card.show(panelDefault, "cardUtama");
     }//GEN-LAST:event_buttonBackEditMouseReleased
 
     private void fieldSearchKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_fieldSearchKeyReleased
@@ -1217,6 +1373,43 @@ public class MainMenu extends javax.swing.JFrame {
         table_alumni.setRowSorter(tr);
         tr.setRowFilter(RowFilter.regexFilter(cari));
     }//GEN-LAST:event_fieldSearchKeyReleased
+
+    private void buttonBackProfilMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonBackProfilMousePressed
+        buttonBackProfil.setBackground(new Color(207, 218, 200));
+        textBackProfil.setForeground(new Color(124, 148, 115));
+    }//GEN-LAST:event_buttonBackProfilMousePressed
+
+    private void buttonBackProfilMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonBackProfilMouseReleased
+        buttonBackProfil.setBackground(new Color(207,218,200));
+        textBackProfil.setForeground(new Color(81,96,75));
+        count_alumni();
+        CardLayout card = (CardLayout)panelDefault.getLayout();
+        card.show(panelDefault, "cardUtama");
+    }//GEN-LAST:event_buttonBackProfilMouseReleased
+
+    private void buttonEditProfilMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonEditProfilMouseReleased
+        buttonEditProfil.setBackground(new Color(124, 148, 115));
+        textEditProfil.setForeground(new Color(81,96,75));
+    }//GEN-LAST:event_buttonEditProfilMouseReleased
+
+    private void buttonEditProfilMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonEditProfilMousePressed
+        buttonEditProfil.setBackground(new Color(81,96,75));
+        textEditProfil.setForeground(new Color(232,234,230));
+        
+        try{
+            String sql = "UPDATE admin SET username = '"+fieldUsername.getText()+
+            "', password = '"+fieldPassword.getText()+"'";
+            java.sql.Connection conn=(Connection)Koneksi.configDB();
+            java.sql.PreparedStatement pst=conn.prepareStatement(sql);
+            pst.execute();
+            update_table();
+
+            JOptionPane.showMessageDialog(null, "Data telah berubah", "Sukses", JOptionPane.INFORMATION_MESSAGE);
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Ada yang salah", JOptionPane.INFORMATION_MESSAGE);
+        }
+    }//GEN-LAST:event_buttonEditProfilMousePressed
     
     private String idAlumni;
     
@@ -1315,8 +1508,10 @@ public class MainMenu extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel buttonBackEdit;
     private javax.swing.JPanel buttonBackLihat;
+    private javax.swing.JPanel buttonBackProfil;
     private javax.swing.JPanel buttonBackTambah;
     private javax.swing.JPanel buttonEditAlumni;
+    private javax.swing.JPanel buttonEditProfil;
     private javax.swing.JPanel buttonLihat;
     private javax.swing.JPanel buttonLogout;
     private javax.swing.JPanel buttonPengaturan;
@@ -1328,9 +1523,11 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JTextField fieldEditTahun;
     private javax.swing.JTextField fieldNama;
     private javax.swing.JTextField fieldNomorHP;
+    private javax.swing.JPasswordField fieldPassword;
     private javax.swing.JTextField fieldSearch;
     private javax.swing.JTextField fieldStatus;
     private javax.swing.JTextField fieldTahun;
+    private javax.swing.JTextField fieldUsername;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1349,6 +1546,10 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -1358,6 +1559,7 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator10;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
@@ -1365,17 +1567,21 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator7;
     private javax.swing.JSeparator jSeparator8;
+    private javax.swing.JSeparator jSeparator9;
     private javax.swing.JPanel panelDefault;
     private javax.swing.JPanel panelEdit;
     private javax.swing.JPanel panelLihat;
+    private javax.swing.JPanel panelProfil;
     private javax.swing.JPanel panelTambah;
     private javax.swing.JPanel panelUtama;
     private javax.swing.JPanel panelWadah;
     private javax.swing.JPanel panelWadah1;
     private javax.swing.JPanel panelWadahFieldTambah;
     private javax.swing.JPanel panelWadahFieldTambah1;
+    private javax.swing.JPanel panelWadahFieldTambah2;
     private javax.swing.JPanel panelWadahTambah;
     private javax.swing.JPanel panelWadahTambah1;
+    private javax.swing.JPanel panelWadahTambah2;
     private javax.swing.JComboBox<String> pickEditJurusan;
     private javax.swing.JSpinner pickEditUmur;
     private javax.swing.JComboBox<String> pickJurusan;
@@ -1383,13 +1589,15 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JTable table_alumni;
     private javax.swing.JLabel textBackEdit;
     private javax.swing.JLabel textBackLihat;
+    private javax.swing.JLabel textBackProfil;
     private javax.swing.JLabel textBackTambah;
+    private javax.swing.JLabel textEditAlumni;
+    private javax.swing.JLabel textEditProfil;
     private javax.swing.JLabel textLihat;
     private javax.swing.JLabel textLogout;
     private javax.swing.JLabel textPengaturan;
     private javax.swing.JLabel textTambah;
     private javax.swing.JLabel textTambahAlumni;
-    private javax.swing.JLabel textTambahAlumni1;
     private javax.swing.JLabel total;
     // End of variables declaration//GEN-END:variables
 }
